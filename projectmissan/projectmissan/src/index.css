@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+.app{
+  text-align: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Button */
+.button-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 65px;
+}
+
+.button-wrap > button{
+  height: 32px;
+  padding: 0 16px;
+  cursor: pointer;
+  border: none;
+  border-radius:10px;
+}
+
+.button-wrap > button.active{
+  background-color: black;
+  color: white;
+}
+
+/* Image */
+
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+
+}
+.image-container > .imagecard{
+  color: white;
+  border-radius: 50px;
+  position: relative;
+  height: 240px;
+  
+}
+.imagecard img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.imagecard h2{
+ position: absolute;
+ bottom: 0;
+ left: 16px;
+ font-size: 16px;
+ text-shadow: 2px 2px black;
+}
